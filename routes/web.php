@@ -43,3 +43,6 @@ Route::get('/register',[UserController::class,'create']);
 
 //create new user
 Route::post('/users',[UserController::class,'store']);
+
+//Logout user
+Route::post('/logout', [UserController::class,'logout']);
